@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+class Media {
+public:
+  char title[50];
+  char publisher[50];
+  char artist[50];
+  char director[50];
+  float rating;
+  float duration;
+  int year;
+};
+
+int main() {
+  Media object;
+  return 0;
+}
