@@ -2,16 +2,15 @@
 #ifndef ALLMEDIA_H
 #define ALLMEDIA_H
 
-#include <iostream>
-using namespace std;
-
 class Media {
- public:
-  Media(int year);
-  // char title[50];
-  int getID();
  protected:
-  int id;
+  char title[50];
+  int year;
+ public:
+  Media(const char* title, int year);
+  const char* getTitle() const;
+  int getYear() const;
+  virtual void printOut() const;
 };
 
 #endif
