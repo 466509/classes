@@ -17,6 +17,7 @@ int main()
 {
   vector<Media*> database;
   char userInput[15];
+  
   while (true) {
     cout << "What would you like to do?" << endl;
     cout << "ADD, SEARCH, DELETE, or QUIT: ";
@@ -47,6 +48,7 @@ int main()
 
 void addMedia(vector<Media*>& database) {
   cout << "adding..." << endl;
+  
 }
 
 void searchAndPrint(vector<Media*>& database) {

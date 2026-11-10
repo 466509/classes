@@ -4,10 +4,10 @@
 #include "movies.h"
 using namespace std;
 
-movies::movies(const char* t, const char* d, int y, float dur, const char* r):Media(t, y) {
+movies::movies(const char* t, const char* d, int y, float dur, float r):Media(t, y) {
   strcpy(director, d);
   duration = dur;
-  strcpy(rating, r);
+  rating = r;
 }
 
 const char* movies::getDirector() const {
@@ -18,7 +18,7 @@ float movies::getDuration() const {
   return duration;
 }
 
-const char* movies::getRating() const {
+float movies::getRating() const {
   return rating;
 }
 

@@ -9,12 +9,12 @@ class movies : public Media {
  private:
   char director[50];
   float duration;
-  char rating[25];
+  int rating;
  public:
-  movies(const char* title, const char* director, int year, float duration, const char* rating);
+  movies(const char* title, const char* director, int year, float duration, int rating);
   const char* getDirector() const;
   float getDuration() const;
-  const char* getRating() const;
+  int getRating() const;
   void printOut() const override;
 };
 

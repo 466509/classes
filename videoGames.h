@@ -7,11 +7,11 @@
 class videoGames : public Media {
  private:
   char publisher[50];
-  char rating[50];
+  float rating;
  public:
-  videoGames(const char* title, int year, const char* publisher, const char* rating);
+  videoGames(const char* title, int year, const char* publisher, float rating);
   const char* getPublisher() const;
-  const char* getRating() const;
+  float getRating() const;
   void printOut() const override;
   
 };
