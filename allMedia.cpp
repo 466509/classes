@@ -10,7 +10,7 @@ Media::Media(const char* t, int y) {
 }
 
 // destructor
-allMedia::~allMedia() {
+Media::~Media() {
 }
 
 // returns the title

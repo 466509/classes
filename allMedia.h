@@ -11,7 +11,7 @@ class Media {
  public:
   //constructor sets the title and year
   Media(const char* title, int year);
-  virtual ~allMedia(); //virtual destructor
+  virtual ~Media(); //virtual destructor
   // functions that return the title and year
   const char* getTitle() const;
   int getYear() const;
